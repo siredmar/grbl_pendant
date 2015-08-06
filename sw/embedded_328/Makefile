@@ -7,9 +7,9 @@
 #F_CPU = 7372800
 F_CPU = 16000000
 
-#MCU = atmega88
+MCU = atmega2560
 #MCU = atmega128
-MCU = atmega328p
+#MCU = atmega328p
 
 FORMAT = ihex
 #FORMAT = binary
@@ -91,10 +91,10 @@ LDFLAGS = $(EXTMEMOPTS) $(LDMAP) $(PRINTF_LIB) $(SCANF_LIB) $(MATH_LIB)
 # Programming support using avrdude. Settings and variables.
 
 #AVRDUDE_PROGRAMMER = usbasp
-#AVRDUDE_PORT = /dev/ttyACM0
+AVRDUDE_PORT = /dev/ttyACM0
 
 AVRDUDE_PROGRAMMER = arduino
-AVRDUDE_PORT = /dev/ttyUSB0
+#AVRDUDE_PORT = /dev/ttyUSB0
 AVRDUDE_BAUD = 57600
 
 AVRDUDE_WRITE_FLASH = -U flash:w:$(TARGET).hex
@@ -163,12 +163,12 @@ program: $(TARGET).hex $(TARGET).eep
 
 
 
-# Convert ELF to COFF for use in debugging / simulating in AVR Studio or VMLAB.
-COFFCONVERT=$(OBJCOPY) --debugging \
---change-section-address .data-0x800000 \
---change-section-address .bss-0x800000 \
---change-section-address .noinit-0x800000 \
---change-section-address .eeprom-0x810000
+## Convert ELF to COFF for use in debugging / simulating in AVR Studio or VMLAB.
+#COFFCONVERT=$(OBJCOPY) --debugging \
+#--change-section-address .data-0x800000 \
+#--change-section-address .bss-0x800000 \
+#--change-section-address .noinit-0x800000 \
+#--change-section-address .eeprom-0x810000
 
 
 coff: $(TARGET).elf
