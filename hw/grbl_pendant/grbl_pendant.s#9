@@ -11680,6 +11680,7 @@ Source: www.kingbright.com</description>
 <part name="R25" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="P+25" library="supply1" deviceset="+5V" device=""/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
+<part name="X3" library="con-subd" deviceset="F25?S" device="HP"/>
 </parts>
 <sheets>
 <sheet>
@@ -11713,6 +11714,31 @@ Source: www.kingbright.com</description>
 <instance part="P+4" gate="1" x="114.3" y="66.04" rot="R90"/>
 <instance part="GND3" gate="1" x="119.38" y="50.8"/>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
+<instance part="X3" gate="-1" x="243.84" y="132.08"/>
+<instance part="X3" gate="-2" x="243.84" y="129.54"/>
+<instance part="X3" gate="-3" x="243.84" y="127"/>
+<instance part="X3" gate="-4" x="243.84" y="124.46"/>
+<instance part="X3" gate="-5" x="243.84" y="121.92"/>
+<instance part="X3" gate="-6" x="243.84" y="119.38"/>
+<instance part="X3" gate="-7" x="243.84" y="116.84"/>
+<instance part="X3" gate="-8" x="243.84" y="114.3"/>
+<instance part="X3" gate="-9" x="243.84" y="111.76"/>
+<instance part="X3" gate="-10" x="243.84" y="109.22"/>
+<instance part="X3" gate="-11" x="243.84" y="106.68"/>
+<instance part="X3" gate="-12" x="243.84" y="104.14"/>
+<instance part="X3" gate="-13" x="243.84" y="101.6"/>
+<instance part="X3" gate="-14" x="243.84" y="99.06"/>
+<instance part="X3" gate="-15" x="243.84" y="96.52"/>
+<instance part="X3" gate="-16" x="243.84" y="93.98"/>
+<instance part="X3" gate="-17" x="243.84" y="91.44"/>
+<instance part="X3" gate="-18" x="243.84" y="88.9"/>
+<instance part="X3" gate="-19" x="243.84" y="86.36"/>
+<instance part="X3" gate="-20" x="243.84" y="83.82"/>
+<instance part="X3" gate="-21" x="243.84" y="81.28"/>
+<instance part="X3" gate="-22" x="243.84" y="78.74"/>
+<instance part="X3" gate="-23" x="243.84" y="76.2"/>
+<instance part="X3" gate="-24" x="243.84" y="73.66"/>
+<instance part="X3" gate="-25" x="243.84" y="71.12"/>
 </instances>
 <busses>
 </busses>
@@ -12154,6 +12180,156 @@ Source: www.kingbright.com</description>
 <pinref part="U$1" gate="G$1" pin="(AD6)PA6"/>
 <wire x1="185.42" y1="142.24" x2="187.96" y2="142.24" width="0.1524" layer="91"/>
 <label x="187.96" y="142.24" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="X3" gate="-1" pin="F"/>
+<wire x1="241.3" y1="132.08" x2="238.76" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="X3" gate="-2" pin="F"/>
+<wire x1="241.3" y1="129.54" x2="238.76" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="X3" gate="-3" pin="F"/>
+<wire x1="241.3" y1="127" x2="238.76" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="X3" gate="-4" pin="F"/>
+<wire x1="241.3" y1="124.46" x2="238.76" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="X3" gate="-5" pin="F"/>
+<wire x1="241.3" y1="121.92" x2="238.76" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="X3" gate="-6" pin="F"/>
+<wire x1="241.3" y1="119.38" x2="238.76" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="X3" gate="-7" pin="F"/>
+<wire x1="241.3" y1="116.84" x2="238.76" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="X3" gate="-8" pin="F"/>
+<wire x1="241.3" y1="114.3" x2="238.76" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="X3" gate="-9" pin="F"/>
+<wire x1="241.3" y1="111.76" x2="238.76" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="X3" gate="-10" pin="F"/>
+<wire x1="241.3" y1="109.22" x2="238.76" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<pinref part="X3" gate="-11" pin="F"/>
+<wire x1="241.3" y1="106.68" x2="238.76" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$31" class="0">
+<segment>
+<pinref part="X3" gate="-12" pin="F"/>
+<wire x1="241.3" y1="104.14" x2="238.76" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="X3" gate="-13" pin="F"/>
+<wire x1="241.3" y1="101.6" x2="238.76" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="X3" gate="-14" pin="F"/>
+<wire x1="241.3" y1="99.06" x2="238.76" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$34" class="0">
+<segment>
+<pinref part="X3" gate="-15" pin="F"/>
+<wire x1="241.3" y1="96.52" x2="238.76" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$35" class="0">
+<segment>
+<pinref part="X3" gate="-16" pin="F"/>
+<wire x1="241.3" y1="93.98" x2="238.76" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$36" class="0">
+<segment>
+<pinref part="X3" gate="-17" pin="F"/>
+<wire x1="241.3" y1="91.44" x2="238.76" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$37" class="0">
+<segment>
+<pinref part="X3" gate="-18" pin="F"/>
+<wire x1="241.3" y1="88.9" x2="238.76" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$38" class="0">
+<segment>
+<pinref part="X3" gate="-19" pin="F"/>
+<wire x1="241.3" y1="86.36" x2="238.76" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$39" class="0">
+<segment>
+<pinref part="X3" gate="-20" pin="F"/>
+<wire x1="241.3" y1="83.82" x2="238.76" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$40" class="0">
+<segment>
+<pinref part="X3" gate="-21" pin="F"/>
+<wire x1="241.3" y1="81.28" x2="238.76" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$41" class="0">
+<segment>
+<pinref part="X3" gate="-22" pin="F"/>
+<wire x1="241.3" y1="78.74" x2="238.76" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$42" class="0">
+<segment>
+<pinref part="X3" gate="-23" pin="F"/>
+<wire x1="241.3" y1="76.2" x2="238.76" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$43" class="0">
+<segment>
+<pinref part="X3" gate="-24" pin="F"/>
+<wire x1="241.3" y1="73.66" x2="238.76" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$44" class="0">
+<segment>
+<pinref part="X3" gate="-25" pin="F"/>
+<wire x1="241.3" y1="71.12" x2="238.76" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

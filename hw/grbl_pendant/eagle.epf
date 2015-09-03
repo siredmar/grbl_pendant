@@ -19,6 +19,7 @@ UsedLibrary="/data/programme/eagle-6.6.0/lbr/74xx-little-us.lbr"
 UsedLibrary="/data/programme/eagle-6.6.0/lbr/74xx-us.lbr"
 UsedLibrary="/data/programme/eagle-6.6.0/lbr/751xx.lbr"
 UsedLibrary="/data/programme/eagle-6.6.0/lbr/EagleLibrary_Wuerth_Elektronik_eiSos_V6_20140807.lbr"
+UsedLibrary="/data/programme/eagle-6.6.0/lbr/HD44780LCD.lbr"
 UsedLibrary="/data/programme/eagle-6.6.0/lbr/SchlegelAr_Master.lbr"
 UsedLibrary="/data/programme/eagle-6.6.0/lbr/SchlegelArmin.lbr"
 UsedLibrary="/data/programme/eagle-6.6.0/lbr/SparkFun-DigitalIC.lbr"
@@ -360,7 +361,7 @@ UsedLibrary="/data/programme/eagle-6.6.0/lbr/zilog.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="0 0 599 399"
+Loc="0 0 977 650"
 State=2
 Number=0
 

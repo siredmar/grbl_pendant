@@ -10115,11 +10115,6 @@ DDEController.pdf</description>
 <pinref part="U$1" gate="G$1" pin="(TOSC2)PD5"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-23" pin="F"/>
-<wire x1="241.3" y1="76.2" x2="238.76" y2="76.2" width="0.1524" layer="91"/>
-<label x="238.76" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="X3" gate="-24" pin="F"/>
 <wire x1="241.3" y1="73.66" x2="238.76" y2="73.66" width="0.1524" layer="91"/>
 <label x="238.76" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -10130,6 +10125,11 @@ DDEController.pdf</description>
 <label x="187.96" y="73.66" size="1.27" layer="95" xref="yes"/>
 <wire x1="185.42" y1="73.66" x2="187.96" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="(WR)PD6"/>
+</segment>
+<segment>
+<pinref part="X3" gate="-23" pin="F"/>
+<wire x1="241.3" y1="76.2" x2="238.76" y2="76.2" width="0.1524" layer="91"/>
+<label x="238.76" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="BTN6" class="0">

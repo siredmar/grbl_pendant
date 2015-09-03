@@ -8114,37 +8114,28 @@ http://www.mouser.com/ds/2/414/35-2231.pdf</description>
 <wire x1="0" y1="60" x2="98" y2="60" width="0.127" layer="21"/>
 <wire x1="98" y1="60" x2="98" y2="0" width="0.127" layer="21"/>
 <wire x1="98" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<wire x1="1.8" y1="11.3" x2="1.8" y2="48.7" width="0.127" layer="21"/>
-<wire x1="1.8" y1="48.7" x2="96.2" y2="48.7" width="0.127" layer="21"/>
-<wire x1="96.2" y1="48.7" x2="96.2" y2="11.3" width="0.127" layer="21"/>
-<wire x1="96.2" y1="11.3" x2="1.8" y2="11.3" width="0.127" layer="21"/>
-<pad name="P$1" x="10" y="57.5" drill="1.016" shape="square"/>
-<pad name="P$2" x="12.54" y="57.5" drill="1.016"/>
-<pad name="P$3" x="15.08" y="57.5" drill="1.016"/>
-<pad name="P$4" x="17.62" y="57.5" drill="1.016"/>
-<pad name="P$5" x="20.16" y="57.5" drill="1.016"/>
-<pad name="P$6" x="22.7" y="57.5" drill="1.016"/>
-<pad name="P$7" x="25.24" y="57.5" drill="1.016"/>
-<pad name="P$8" x="27.78" y="57.5" drill="1.016"/>
-<pad name="P$9" x="30.32" y="57.5" drill="1.016"/>
-<pad name="P$10" x="32.86" y="57.5" drill="1.016"/>
-<pad name="P$11" x="35.4" y="57.5" drill="1.016"/>
-<pad name="P$12" x="37.94" y="57.5" drill="1.016"/>
-<pad name="P$13" x="40.48" y="57.5" drill="1.016"/>
-<pad name="P$14" x="43.02" y="57.5" drill="1.016"/>
-<pad name="P$15" x="45.56" y="57.5" drill="1.016"/>
-<pad name="P$16" x="48.1" y="57.5" drill="1.016"/>
-<rectangle x1="3" y1="11" x2="6" y2="14" layer="40"/>
-<rectangle x1="3" y1="46" x2="6" y2="49" layer="40"/>
-<rectangle x1="92" y1="46" x2="95" y2="49" layer="40"/>
-<rectangle x1="92" y1="11" x2="95" y2="14" layer="40"/>
-<rectangle x1="31" y1="11" x2="34" y2="14" layer="40"/>
-<rectangle x1="64" y1="11" x2="67" y2="14" layer="40"/>
-<rectangle x1="31" y1="46" x2="34" y2="49" layer="40"/>
-<rectangle x1="64" y1="46" x2="67" y2="49" layer="40"/>
+<wire x1="0.5" y1="11.3" x2="0.5" y2="48.7" width="0.127" layer="21"/>
+<wire x1="0.5" y1="48.7" x2="97.5" y2="48.7" width="0.127" layer="21"/>
+<wire x1="97.5" y1="48.7" x2="97.5" y2="11.3" width="0.127" layer="21"/>
+<wire x1="97.5" y1="11.3" x2="0.5" y2="11.3" width="0.127" layer="21"/>
+<pad name="P$1" x="10" y="56.9" drill="1.016" shape="square"/>
+<pad name="P$2" x="12.54" y="56.9" drill="1.016"/>
+<pad name="P$3" x="15.08" y="56.9" drill="1.016"/>
+<pad name="P$4" x="17.62" y="56.9" drill="1.016"/>
+<pad name="P$5" x="20.16" y="56.9" drill="1.016"/>
+<pad name="P$6" x="22.7" y="56.9" drill="1.016"/>
+<pad name="P$7" x="25.24" y="56.9" drill="1.016"/>
+<pad name="P$8" x="27.78" y="56.9" drill="1.016"/>
+<pad name="P$9" x="30.32" y="56.9" drill="1.016"/>
+<pad name="P$10" x="32.86" y="56.9" drill="1.016"/>
+<pad name="P$11" x="35.4" y="56.9" drill="1.016"/>
+<pad name="P$12" x="37.94" y="56.9" drill="1.016"/>
+<pad name="P$13" x="40.48" y="56.9" drill="1.016"/>
+<pad name="P$14" x="43.02" y="56.9" drill="1.016"/>
+<pad name="P$15" x="45.56" y="56.9" drill="1.016"/>
+<pad name="P$16" x="48.1" y="56.9" drill="1.016"/>
 <hole x="2.5" y="2.5" drill="3.2"/>
 <hole x="2.5" y="57.5" drill="3.2"/>
-<hole x="95.5" y="57.5" drill="3.2"/>
 <hole x="95.5" y="2.5" drill="3.2"/>
 </package>
 <package name="LCD-20X4-3HOLES">
@@ -8565,6 +8556,7 @@ http://www.mouser.com/ds/2/414/35-2231.pdf</description>
 <segment>
 <wire x1="45.72" y1="147.32" x2="43.18" y2="147.32" width="0.1524" layer="91"/>
 <label x="43.18" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC1" gate="A" pin="SER"/>
 </segment>
 <segment>
 <pinref part="X4" gate="-25" pin="F"/>
@@ -8574,24 +8566,26 @@ http://www.mouser.com/ds/2/414/35-2231.pdf</description>
 </net>
 <net name="LED_SHIFT_RCK" class="0">
 <segment>
-<wire x1="45.72" y1="134.62" x2="43.18" y2="134.62" width="0.1524" layer="91"/>
 <label x="43.18" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="45.72" y1="134.62" x2="43.18" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="A" pin="RCK"/>
 </segment>
 <segment>
-<pinref part="X4" gate="-23" pin="F"/>
-<wire x1="236.22" y1="60.96" x2="233.68" y2="60.96" width="0.1524" layer="91"/>
-<label x="233.68" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="X4" gate="-24" pin="F"/>
-<wire x1="236.22" y1="58.42" x2="233.68" y2="58.42" width="0.1524" layer="91"/>
 <label x="233.68" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="236.22" y1="58.42" x2="233.68" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="X4" gate="-24" pin="F"/>
 </segment>
 </net>
 <net name="LED_SHIFT_SCK" class="0">
 <segment>
-<wire x1="45.72" y1="142.24" x2="43.18" y2="142.24" width="0.1524" layer="91"/>
 <label x="43.18" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="45.72" y1="142.24" x2="43.18" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="A" pin="SCK"/>
+</segment>
+<segment>
+<label x="233.68" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="236.22" y1="60.96" x2="233.68" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="X4" gate="-23" pin="F"/>
 </segment>
 </net>
 <net name="+5V" class="0">
