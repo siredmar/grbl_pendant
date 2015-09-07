@@ -30,3 +30,8 @@
 
 # Debug files
 *.dSYM/
+
+# Eagle backup files
+*.b#*
+*.s#*
+
