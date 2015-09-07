@@ -10115,11 +10115,6 @@ DDEController.pdf</description>
 <pinref part="U$1" gate="G$1" pin="(TOSC2)PD5"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-23" pin="F"/>
-<wire x1="241.3" y1="76.2" x2="238.76" y2="76.2" width="0.1524" layer="91"/>
-<label x="238.76" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="X3" gate="-24" pin="F"/>
 <wire x1="241.3" y1="73.66" x2="238.76" y2="73.66" width="0.1524" layer="91"/>
 <label x="238.76" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -10130,6 +10125,11 @@ DDEController.pdf</description>
 <label x="187.96" y="73.66" size="1.27" layer="95" xref="yes"/>
 <wire x1="185.42" y1="73.66" x2="187.96" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="(WR)PD6"/>
+</segment>
+<segment>
+<pinref part="X3" gate="-23" pin="F"/>
+<wire x1="241.3" y1="76.2" x2="238.76" y2="76.2" width="0.1524" layer="91"/>
+<label x="238.76" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="BTN6" class="0">
@@ -10408,12 +10408,12 @@ DDEController.pdf</description>
 </plain>
 <instances>
 <instance part="U$2" gate="G$1" x="129.54" y="152.4"/>
-<instance part="R1" gate="G$1" x="30.48" y="83.82"/>
-<instance part="C1" gate="G$1" x="53.34" y="38.1" rot="R270"/>
-<instance part="R2" gate="G$1" x="30.48" y="50.8"/>
-<instance part="C8" gate="G$1" x="53.34" y="55.88" rot="R270"/>
-<instance part="R3" gate="G$1" x="30.48" y="68.58"/>
-<instance part="C9" gate="G$1" x="53.34" y="71.12" rot="R270"/>
+<instance part="R1" gate="G$1" x="43.18" y="73.66" rot="R270"/>
+<instance part="C1" gate="G$1" x="33.02" y="15.24" rot="R180"/>
+<instance part="R2" gate="G$1" x="33.02" y="30.48" rot="R270"/>
+<instance part="C8" gate="G$1" x="93.98" y="35.56" rot="R180"/>
+<instance part="R3" gate="G$1" x="93.98" y="50.8" rot="R270"/>
+<instance part="C9" gate="G$1" x="43.18" y="58.42" rot="R180"/>
 <instance part="P+7" gate="1" x="139.7" y="73.66"/>
 <instance part="C10" gate="G$1" x="139.7" y="66.04"/>
 <instance part="GND4" gate="1" x="121.92" y="134.62" rot="R270"/>
@@ -10446,18 +10446,18 @@ DDEController.pdf</description>
 <instance part="X2" gate="-23" x="22.86" y="147.32" rot="R180"/>
 <instance part="X2" gate="-24" x="22.86" y="149.86" rot="R180"/>
 <instance part="X2" gate="-25" x="22.86" y="152.4" rot="R180"/>
-<instance part="R4" gate="G$1" x="50.8" y="76.2" rot="MR180"/>
-<instance part="R5" gate="G$1" x="50.8" y="60.96" rot="MR180"/>
-<instance part="R6" gate="G$1" x="50.8" y="43.18" rot="MR180"/>
-<instance part="GND12" gate="1" x="58.42" y="33.02"/>
-<instance part="GND13" gate="1" x="58.42" y="50.8"/>
-<instance part="GND14" gate="1" x="58.42" y="66.04"/>
-<instance part="P+5" gate="1" x="22.86" y="55.88"/>
-<instance part="P+9" gate="1" x="22.86" y="73.66"/>
-<instance part="P+10" gate="1" x="22.86" y="88.9"/>
-<instance part="FERRIT1" gate="G$1" x="30.48" y="43.18" rot="MR180"/>
-<instance part="FERRIT2" gate="G$1" x="30.48" y="60.96" rot="MR180"/>
-<instance part="FERRIT3" gate="G$1" x="30.48" y="76.2" rot="MR180"/>
+<instance part="R4" gate="G$1" x="53.34" y="66.04" rot="MR180"/>
+<instance part="R5" gate="G$1" x="104.14" y="43.18" rot="MR180"/>
+<instance part="R6" gate="G$1" x="43.18" y="22.86" rot="MR180"/>
+<instance part="GND12" gate="1" x="33.02" y="7.62"/>
+<instance part="GND13" gate="1" x="93.98" y="27.94"/>
+<instance part="GND14" gate="1" x="43.18" y="50.8"/>
+<instance part="P+5" gate="1" x="33.02" y="40.64"/>
+<instance part="P+9" gate="1" x="93.98" y="60.96"/>
+<instance part="P+10" gate="1" x="43.18" y="83.82"/>
+<instance part="FERRIT1" gate="G$1" x="22.86" y="22.86" rot="MR180"/>
+<instance part="FERRIT2" gate="G$1" x="83.82" y="43.18" rot="MR180"/>
+<instance part="FERRIT3" gate="G$1" x="33.02" y="66.04" rot="MR180"/>
 <instance part="R7" gate="G$1" x="68.58" y="101.6"/>
 <instance part="P+11" gate="1" x="60.96" y="106.68"/>
 <instance part="P+12" gate="1" x="33.02" y="111.76" rot="R270"/>
@@ -10480,20 +10480,17 @@ DDEController.pdf</description>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="P+5" gate="1" pin="+5V"/>
-<wire x1="22.86" y1="53.34" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="50.8" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="38.1" x2="33.02" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="P+9" gate="1" pin="+5V"/>
-<wire x1="22.86" y1="71.12" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="58.42" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="P+10" gate="1" pin="+5V"/>
-<wire x1="22.86" y1="86.36" x2="22.86" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="83.82" x2="25.4" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="81.28" x2="43.18" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
@@ -10547,20 +10544,17 @@ DDEController.pdf</description>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="58.42" y1="35.56" x2="58.42" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="38.1" x2="55.88" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="10.16" x2="33.02" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C8" gate="G$1" pin="1"/>
 <pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="58.42" y1="53.34" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="55.88" x2="55.88" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="30.48" x2="93.98" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C9" gate="G$1" pin="1"/>
 <pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="58.42" y1="68.58" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="71.12" x2="55.88" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="53.34" x2="43.18" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="STEPPER_DISABLE" class="0">
@@ -10666,8 +10660,8 @@ DDEController.pdf</description>
 <pinref part="X2" gate="-25" pin="F"/>
 </segment>
 <segment>
-<wire x1="25.4" y1="76.2" x2="22.86" y2="76.2" width="0.1524" layer="91"/>
-<label x="22.86" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="27.94" y1="66.04" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
+<label x="25.4" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="FERRIT3" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -10678,8 +10672,8 @@ DDEController.pdf</description>
 <pinref part="X2" gate="-24" pin="F"/>
 </segment>
 <segment>
-<wire x1="25.4" y1="60.96" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
-<label x="22.86" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="78.74" y1="43.18" x2="76.2" y2="43.18" width="0.1524" layer="91"/>
+<label x="76.2" y="43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="FERRIT2" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -10691,8 +10685,8 @@ DDEController.pdf</description>
 </segment>
 <segment>
 <pinref part="FERRIT1" gate="G$1" pin="1"/>
-<wire x1="25.4" y1="43.18" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
-<label x="22.86" y="43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="17.78" y1="22.86" x2="15.24" y2="22.86" width="0.1524" layer="91"/>
+<label x="15.24" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SPINDLE_DIR" class="0">
@@ -10757,8 +10751,8 @@ DDEController.pdf</description>
 </net>
 <net name="LIMIT_Y_DEBOUNCED" class="0">
 <segment>
-<label x="60.96" y="60.96" size="1.27" layer="95" xref="yes"/>
-<wire x1="55.88" y1="60.96" x2="60.96" y2="60.96" width="0.1524" layer="91"/>
+<label x="114.3" y="43.18" size="1.27" layer="95" xref="yes"/>
+<wire x1="109.22" y1="43.18" x2="114.3" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -10769,8 +10763,8 @@ DDEController.pdf</description>
 </net>
 <net name="LIMIT_Z_DEBOUNCED" class="0">
 <segment>
-<label x="60.96" y="43.18" size="1.27" layer="95" xref="yes"/>
-<wire x1="55.88" y1="43.18" x2="60.96" y2="43.18" width="0.1524" layer="91"/>
+<label x="53.34" y="22.86" size="1.27" layer="95" xref="yes"/>
+<wire x1="48.26" y1="22.86" x2="53.34" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -10781,8 +10775,8 @@ DDEController.pdf</description>
 </net>
 <net name="LIMIT_X_DEBOUNCED" class="0">
 <segment>
-<label x="60.96" y="76.2" size="1.27" layer="95" xref="yes"/>
-<wire x1="55.88" y1="76.2" x2="60.96" y2="76.2" width="0.1524" layer="91"/>
+<label x="63.5" y="66.04" size="1.27" layer="95" xref="yes"/>
+<wire x1="58.42" y1="66.04" x2="63.5" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -10805,49 +10799,43 @@ DDEController.pdf</description>
 </net>
 <net name="LIMIT_INT_X" class="0">
 <segment>
-<wire x1="40.64" y1="76.2" x2="35.56" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="66.04" x2="38.1" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="71.12" x2="40.64" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="71.12" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="63.5" x2="43.18" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="76.2" x2="45.72" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="66.04" x2="48.26" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="76.2" x2="40.64" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="83.82" x2="35.56" y2="83.82" width="0.1524" layer="91"/>
-<junction x="40.64" y="76.2"/>
-<junction x="40.64" y="76.2"/>
+<wire x1="43.18" y1="66.04" x2="43.18" y2="68.58" width="0.1524" layer="91"/>
+<junction x="43.18" y="66.04"/>
+<junction x="43.18" y="66.04"/>
 <pinref part="FERRIT3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="LIMIT_INT_Y" class="0">
 <segment>
-<wire x1="40.64" y1="60.96" x2="35.56" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="43.18" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="55.88" x2="40.64" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="55.88" x2="40.64" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="40.64" x2="93.98" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="60.96" x2="45.72" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="43.18" x2="99.06" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="60.96" x2="40.64" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="68.58" x2="35.56" y2="68.58" width="0.1524" layer="91"/>
-<junction x="40.64" y="60.96"/>
-<junction x="40.64" y="60.96"/>
+<wire x1="93.98" y1="43.18" x2="93.98" y2="45.72" width="0.1524" layer="91"/>
+<junction x="93.98" y="43.18"/>
+<junction x="93.98" y="43.18"/>
 <pinref part="FERRIT2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="LIMIT_INT_Z" class="0">
 <segment>
-<wire x1="40.64" y1="43.18" x2="35.56" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="35.56" y1="50.8" x2="40.64" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="50.8" x2="40.64" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="25.4" x2="33.02" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="43.18" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="38.1" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="38.1" x2="40.64" y2="43.18" width="0.1524" layer="91"/>
-<junction x="40.64" y="43.18"/>
-<junction x="40.64" y="43.18"/>
+<wire x1="33.02" y1="22.86" x2="38.1" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="20.32" x2="33.02" y2="22.86" width="0.1524" layer="91"/>
+<junction x="33.02" y="22.86"/>
+<junction x="33.02" y="22.86"/>
 <pinref part="FERRIT1" gate="G$1" pin="2"/>
 </segment>
 </net>
